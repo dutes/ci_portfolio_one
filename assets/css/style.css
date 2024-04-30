@@ -92,12 +92,26 @@ main {
 }
 
 
+
+/* footer */
 footer {
     background-color: rgb(110, 169, 160); /* Teal */
     height: 100px; 
     width: 100%;
     box-shadow: 0 2px 5px #3a3a3a;
-    z-index: 100;
+    z-index: 100; 
+}
+
+#social-networks {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 260%;
+    padding: 100% 30% 20% 30%; 
 }
 
 @media (max-width:450px) {
