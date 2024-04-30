@@ -7,49 +7,34 @@
     font-family: 'Arial', sans-serif;
 }
 
-.hero-image {
-    position:absolute;
+#hero-image {
+    background-image: url('/assets/images/chef0mat.webp');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    top: 0; /* Adjust the top position to place it half above and half below the header */
+    left: 7; /* Center the image */
     border-radius: 50%; /* Makes the image round */
-    background: #F3F4F6; /* Cream color background */
-    overflow: hidden; /* Ensures no overflow */
-    top: 5px; /* Distance from the top of the header */
-    left: 5px; /* Distance from the left side of the page */
-    flex-shrink: 1;
-    min-width: none;
-    min-height: auto;
-}
-
-.hero-image img {
-    width: auto;
-    height: 100px;
-    object-fit: back;
-    display: block; /* Removes bottom space/gap */
-}
-
-
-body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #F3F4F6; /* Cream */
-    display: flex;
-    flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    z-index: 15; /* Lower than the header to allow text to scroll under it */
+    /* box-shadow: 1px 1px #3a3a3a;  */
 }
 
 header {
-    background-color: #008080; /* Teal */
+    background-color: rgb(110, 169, 160); /* Teal */
     color: #F3F4F6; /* Cream */
-    padding: 1rem 2rem;
-    position: relative; 
+    padding: 1rem 2rem; 
+    position: fixed; 
     height: 100px; 
     overflow: hidden; 
     position: fixed;
-    z-index: index 99;
+    top:0;
     width: 100%;
     box-shadow: 0 2px 5px #3a3a3a;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; */
+    z-index: 10;
 }
 
 nav ul {
@@ -72,20 +57,34 @@ nav ul li a {
 }
 
 nav ul li a.active {
-    color: #FFDB58; /* Mustard Yellow */
+    color: rgb(250, 213, 134); /* Mustard Yellow */
 }
 
+
 main {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 249, 217); /* Cream */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
     padding: 20px;
     text-align: center;
 }
 
-h1 {
-    color: #252525;
+#welcome {
+    padding-top: 100px;
+    padding-left: 200px;
+    text-align: center;
 }
 
-p {
-    color: #3a3a3a;
+footer {
+    background-color: rgb(110, 169, 160); /* Teal */
+    height: 100px; 
+    width: 100%;
+    box-shadow: 0 2px 5px #3a3a3a;
+    z-index: 100;
 }
 
 @media (max-width:400px) {
