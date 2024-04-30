@@ -1,40 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-/* Setting font and box sizing for all elements */
-*, *::before, *::after {
+*{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
 #hero-image {
-    background-image: url('/assets/images/chef0mat.webp');
-    background-size: cover;
-    background-position: center;
-    position: fixed;
+    background-image: url('/assets/images/chef0mat.webp'); /*image link in the assets folder*/
+    background-size: cover; /*make sure the image fits space provided*/
+    background-position: center; /*again making sure the hero image stays centered in the space provided */
+    position: fixed; /* keeps the image in posion */
     width: 200px; /* Set the width of the image */
     height: 200px; /* Set the height of the image */
-    top: 0; /* Adjust the top position to place it half above and half below the header */
+    top: 0; /* Adjust the top position*/
     left: 7; /* Center the image */
     border-radius: 50%; /* Makes the image round */
     z-index: 15; /* Lower than the header to allow text to scroll under it */
-    /* box-shadow: 1px 1px #3a3a3a;  */
+    /* box-shadow: 1px 1px #3a3a3a; not sure if I want to have this or not. Still experimenting */
 }
 
 header {
     background-color: rgb(110, 169, 160); /* Teal */
     color: #F3F4F6; /* Cream */
-    padding: 1rem 2rem; 
-    position: fixed; 
-    height: 100px; 
-    overflow: hidden; 
-    position: fixed;
-    top:0;
-    width: 100%;
-    box-shadow: 0 2px 5px #3a3a3a;
-    display: flex;
-    justify-content: flex-end; */
-    z-index: 10;
+    padding: 1rem 2rem; /* keep text in header in the middle */
+    position: fixed; /* make sure the header isn't moveable */
+    height: 100px; /* went with 100px for both header and footer */
+    top:0; /*put it to the top of the page */
+    width: 100%; /*make sure the header goes the full width*/
+    box-shadow: 0 2px 5px #3a3a3a; /*adding a drop shadow for looks */
+    display: flex; /*making the header responsive */
+    justify-content: flex-end; /*make the page links stick to the right hand side when resizing */
+    z-index: 10; /*make body go under the header on scrolling */
+    font-family: Lato, sans-serif; /* adding the lato font type for now. Will be looking at fonts once I have more content */
 }
 
 nav ul {
@@ -48,6 +46,8 @@ nav ul {
 nav ul li {
     margin-left:0 20px;
     padding-inline: 15px;
+    font-size: large;
+    text-transform: uppercase;
 }
 
 nav ul li a {
@@ -68,7 +68,7 @@ main {
     background-color: rgb(255, 249, 217); /* Cream */
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif;
     padding: 20px;
     text-align: center;
 }
@@ -79,6 +79,19 @@ main {
     text-align: center;
 }
 
+#seasonal_main {
+    padding-top: 100px;
+    padding-left: 200px;
+    text-align: center;
+}
+
+#web_app_main {
+    padding-top: 100px;
+    padding-left: 200px;
+    text-align: center;
+}
+
+
 footer {
     background-color: rgb(110, 169, 160); /* Teal */
     height: 100px; 
@@ -87,7 +100,7 @@ footer {
     z-index: 100;
 }
 
-@media (max-width:400px) {
+@media (max-width:450px) {
     .hero-image {
         display: none;
     }
