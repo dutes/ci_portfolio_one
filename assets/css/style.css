@@ -114,6 +114,14 @@ footer {
     padding: 100% 30% 20% 30%; 
 }
 
+.fa-brands {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform: scale(1.1); 
+} 
+
 @media (max-width:450px) {
     .hero-image {
         display: none;
