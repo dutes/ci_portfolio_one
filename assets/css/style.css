@@ -14,7 +14,7 @@
     width: 200px; /* Set the width of the image */
     height: 200px; /* Set the height of the image */
     top: 0; /* Adjust the top position*/
-    left: 7; /* Center the image */
+    left: 7px; /* Center the image */
     border-radius: 50%; /* Makes the image round */
     z-index: 15; /* Lower than the header to allow text to scroll under it */
     /* box-shadow: 1px 1px #3a3a3a; not sure if I want to have this or not. Still experimenting */
@@ -44,7 +44,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left:0 20px;
+    margin-left: 20px;
     padding-inline: 15px;
     font-size: large;
     text-transform: uppercase;
@@ -54,23 +54,38 @@ nav ul li a {
     color: #36454F; /* Charcoal Gray */
     text-decoration: none;
     font-weight: bold;
+    transition: transform 0.3s ease-in-out;
 }
 
 nav ul li a.active {
     color: rgb(250, 213, 134); /* Mustard Yellow */
 }
 
+nav ul li a:hover {
+    transform: scale(1.1); 
+} 
+
 
 main {
-    min-height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: rgb(255, 249, 217); /* Cream */
-    display: flex;
+    display: flex-grow;
     flex-direction: column;
     font-family: Lato, sans-serif;
     padding: 20px;
     text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p {
+    font-family: robo;
 }
 
 #welcome {
@@ -122,9 +137,9 @@ footer {
     transform: scale(1.1); 
 } 
 
-@media (max-width:450px) {
-    .hero-image {
-        display: none;
+@media (max-width:525px) {
+    #hero-image {
+        display: none; 
     }
     nav ul li {
         justify-content: center;  
