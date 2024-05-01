@@ -7,7 +7,7 @@
 }
 
 #hero-image {
-    background-image: url('/assets/images/chef0mat.webp'); /*image link in the assets folder*/
+    background-image: url('assets/images/chef0mat.webp'); /*image link in the assets folder*/
     background-size: cover; /*make sure the image fits space provided*/
     background-position: center; /*again making sure the hero image stays centered in the space provided */
     position: fixed; /* keeps the image in posion */
