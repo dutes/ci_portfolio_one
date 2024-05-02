@@ -35,6 +35,16 @@ header {
     font-family: Lato, sans-serif; /* adding the lato font type for now. Will be looking at fonts once I have more content */
 }
 
+/* Navigation handling code */
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display:none;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -65,20 +75,6 @@ nav ul li a.active {
     transform: scale(1.1); 
 }  not sure I want this - will come back to it*/
 
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display:none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
-}
-
-
-
 main {
     height: 100%;
     margin: 0;
@@ -90,6 +86,10 @@ main {
     padding: 20px;
     text-align: center;
 }
+
+
+
+
 
 body {
     display: flex;
@@ -150,34 +150,58 @@ footer {
     transform: scale(1.1); 
 } 
 
-/* @media (max-width:525px) {
-    #hero-image {
-        display: none; 
-    }
-    nav ul li {
-        justify-content: center;  
-    }
-} */
-
 
 @media (max-width:525px) {
-nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
-}
+    /* Styling for full screen burger nav*/
+    nav {
+        position: fixed; /* Fixed position to cover the whole screen */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        top: 0;
+        left: 0;
+        background-color:  rgba(110, 169, 160, 0.95); /* Semi-transparent teal background so you can still see the page content */
+        display: flex; /* Using flex to center the links */
+        align-items: center; /* keep the links in the middle of the menu */
+        z-index: 20; /* always stay on top */
+        transform: translateX(100%); /* start transition in from right hand side*/
+        transition: transform 0.3s ease-in-out; /* animation timing for transition */
+    }
 
-#menu {
-    display: flex;
-}
+    /* Show the nav when toggle is checked */
+    #nav-toggle:checked ~ nav {
+        transform: translateX(0); /* trigger the animation on tapping checkbox*/
+    }
 
-#menu > li {
-    padding-left: 1rem;
-}
+    /* Styling for nav items to enhance visibility and aesthetics */
+    nav ul {
+        width: 100%; /* Full width of the nav */
+        text-align: center; /* Center the text of links */
+        flex-direction: column; /* stack the links vertically */
+        align-items: center; /*keep them in the middle */
+        text-align: center; /*keep them in the middle */
+    }
 
-.nav-toggle-label {
-    display: none;
-}
+
+
+    nav ul li a {
+        font-size: 24px; /* Larger font size for better readability */
+        padding: 50px; /* wide spacing between links for better tapping*/
+        display: block; /* keep links on their own line */
+    }
+
+    .nav-toggle-label {
+        display: block; /*hide the check box*/
+        position: fixed; /*keep it fixed in the top right */
+        top: 40px; /*next few lines are tweaking display of bureger menu icon */
+        right: 20px; 
+        z-index: 21; 
+        font-size: 2em;
+    }
+
+    #nav-toggle {
+       opacity: 0; Invisible but functional /* hide the check box by making it invisible*/ 
+       width: 40px; /* make sure there's a big enough tapping zone for it to work */
+       height: 40px; /*same as above */
+       z-index: 21; /*make sure its not pushed under any other page element */
+    }
 }
