@@ -61,9 +61,22 @@ nav ul li a.active {
     color: rgb(250, 213, 134); /* Mustard Yellow */
 }
 
-nav ul li a:hover {
+/* nav ul li a:hover {
     transform: scale(1.1); 
-} 
+}  not sure I want this - will come back to it*/
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display:none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 
 
 main {
@@ -137,11 +150,34 @@ footer {
     transform: scale(1.1); 
 } 
 
-@media (max-width:525px) {
+/* @media (max-width:525px) {
     #hero-image {
         display: none; 
     }
     nav ul li {
         justify-content: center;  
     }
+} */
+
+
+@media (max-width:525px) {
+nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu > li {
+    padding-left: 1rem;
+}
+
+.nav-toggle-label {
+    display: none;
+}
 }
