@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
-    padding: 0;
+    padding: 0; /*adding universal settings for site */
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+html, body {
+    height:100%; /*make the body take all the height*/
+    font-family: Lato, sans-serif; /*defining font for the body - not sure if best way to do it - will experiment*/
+    margin: 0;
+    padding: 0;
 }
 
 #hero-image {
@@ -75,27 +82,17 @@ nav ul li a.active {
     transform: scale(1.1); 
 }  not sure I want this - will come back to it*/
 
+
+/*main content area of the pages */
+
 main {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    padding: 20px; /*give some space around the content */
+    padding-top: 100px; /*push it down a bit to keep it away from the hero - not sure if I like it, will lookat it after content is finalise*/
     background-color: rgb(255, 249, 217); /* Cream */
-    display: flex-grow;
-    flex-direction: column;
-    font-family: Lato, sans-serif;
-    padding: 20px;
-    text-align: center;
+    min-height: calc(100vh - 100px); /*I wanted to make the main expand to take up the avaliable space when content wasn't there */
+    overflow:auto /* want to keep the footer on screen and have the content scroll - will test this on devices when more content is added */
 }
 
-
-
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
 p {
     font-family: robo;
@@ -153,6 +150,11 @@ footer {
 
 @media (max-width:525px) {
     /* Styling for full screen burger nav*/
+    #hero-image {
+        display: hidden;
+    }
+
+
     nav {
         position: fixed; /* Fixed position to cover the whole screen */
         width: 100%; /* Full width */
