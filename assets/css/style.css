@@ -104,11 +104,70 @@ p {
     text-align: center;
 }
 
+/*Seasonal recepies page*/
+
 #seasonal_main {
     padding-top: 100px;
-    padding-left: 200px;
+    /* padding-left: 200px; */
     text-align: center;
 }
+
+#recepie {
+    background-color: rgb(110, 169, 160); /* setting background of the recepie box*/
+    padding: 20px; /* setting padding and margins*/
+    margin: 20px auto;
+    max-width: 50%; /*make it so the recepie cards don't take up the entire width*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+.recepie_title {
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.ingredients {
+    /* padding: 10px; */
+    max-width: 50%;
+}
+
+.recipe_instructions {
+    padding: 10px;
+}
+
+.instructions {
+    padding: 15px;
+
+}
+
+
+#recepie.ul {
+    float: left;
+    width: 50%;
+    list-style-type: none;
+
+}
+
+
+#recepie.ol {
+    float: left;
+
+}
+
+#recepie ul, #recepie ol {
+    margin-left: 50px; /* Directly setting a 15px left margin */
+}
+
+#recepie img {
+    float: right;
+    height: auto;
+    max-height: fit-content;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+
+
+
 
 #web_app_main {
     padding-top: 100px;
