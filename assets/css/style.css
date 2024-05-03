@@ -260,7 +260,7 @@ footer {
     }
 
     #nav-toggle {
-       opacity: 0; Invisible but functional /* hide the check box by making it invisible*/ 
+       opacity: 0; /*  Invisible but functional hide the check box by making it invisible*/ 
        width: 40px; /* make sure there's a big enough tapping zone for it to work */
        height: 40px; /*same as above */
        z-index: 21; /*make sure its not pushed under any other page element */
