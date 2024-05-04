@@ -117,16 +117,15 @@ p {
     padding: 20px; /* setting padding and margins*/
     margin: 20px auto;
     max-width: 50%; /*make it so the recepie cards don't take up the entire width*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
 } 
 
 .recepie_title {
-    text-transform: capitalize;
-    padding: 10px;
+    max-width: 75%;
 }
 
 .ingredients {
-    /* padding: 10px; */
     max-width: 50%;
 }
 
@@ -162,7 +161,8 @@ p {
     height: auto;
     max-height: fit-content;
     margin-left: 30px;
-    margin-top: -20px;
+    margin-top: -20px; 
+
 }
 
 
@@ -265,4 +265,21 @@ footer {
        height: 40px; /*same as above */
        z-index: 21; /*make sure its not pushed under any other page element */
     }
+/*seasonal recepie page*/
+    #recepie {
+        background-color: rgb(110, 169, 160); /* setting background of the recepie box*/
+        padding: 20px; /* setting padding and margins*/
+        margin: 20px auto;
+        max-width: 100%; /*make it so the recepie cards don't take up the entire width*/
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    } 
+    
+ #recepie img {
+        float: center; /*make image position more responsive*/
+        height: auto; /*ensure the height adjusts*/
+        max-height: fit-content; /*enusre the image doesn't break bounds*/
+        margin-left: 30px; /*keep image in a good postion with respect to the ingredients list*/
+        margin-top: -20px; /*keep image in a good postion with respect to the ingredients list*/
+    }
+    
 }
