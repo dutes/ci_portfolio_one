@@ -74,13 +74,14 @@ nav ul li a {
     transition: transform 0.3s ease-in-out;
 }
 
+nav ul li a:hover {
+    transform: scale(1.1);
+    background-color: red; 
+}
+
 nav ul li a.active {
     color: rgb(250, 213, 134); /* Mustard Yellow */
 }
-
-/* nav ul li a:hover {
-    transform: scale(1.1); 
-}  not sure I want this - will come back to it*/
 
 
 /*main content area of the pages */
@@ -103,6 +104,35 @@ p {
     padding-left: 200px;
     text-align: center;
 }
+
+/*web apps*/
+
+#web_app_main {
+    padding-top: 100px;
+    /* padding-left: 200px; */
+    text-align: center;
+}
+
+#not_ready {
+    padding-top: 100px;
+    /* padding-left: 200px; */
+    text-align: center;
+}
+
+#web_app_form {
+    background-color: rgb(110, 169, 160); /* setting background of the recepie box*/
+    padding: 20px; /* setting padding and margins*/
+    margin: 20px auto;
+    max-width: 615px; /*make it so the recepie cards don't take up the entire width*/
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+} 
+
+#web_app_form.form {
+    float: center;
+}
+
+
 
 /*Seasonal recepies page*/
 
