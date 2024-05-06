@@ -27,6 +27,21 @@ html, body {
     /* box-shadow: 1px 1px #3a3a3a; not sure if I want to have this or not. Still experimenting */
 }
 
+#hero-image-sad {
+    background-image: url('/assets/images/chef0mat_sad.webp'); /*image link in the assets folder*/
+    background-size: cover; /*make sure the image fits space provided*/
+    background-position: center; /*again making sure the hero image stays centered in the space provided */
+    position: fixed; /* keeps the image in posion */
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    top: 0; /* Adjust the top position*/
+    left: 7px; /* Center the image */
+    border-radius: 50%; /* Makes the image round */
+    z-index: 15; /* Lower than the header to allow text to scroll under it */
+    /* box-shadow: 1px 1px #3a3a3a; not sure if I want to have this or not. Still experimenting */
+}
+
+
 header {
     background-color: rgb(110, 169, 160); /* Teal */
     color: #F3F4F6; /* Cream */
@@ -75,8 +90,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    transform: scale(1.1);
-    background-color: red; 
+    transform: scale(1.1); /*not working I guess because of inherited css, will figure it out later or ditch it*/
 }
 
 nav ul li a.active {
@@ -126,12 +140,8 @@ p {
     max-width: 615px; /*make it so the recepie cards don't take up the entire width*/
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 3%;
-} 
-
-#web_app_form.form {
-    float: center;
+    text-align: center;
 }
-
 
 
 /*Seasonal recepies page*/
