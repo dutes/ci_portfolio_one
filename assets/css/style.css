@@ -123,13 +123,11 @@ p {
 
 #web_app_main {
     padding-top: 100px;
-    /* padding-left: 200px; */
     text-align: center;
 }
 
 #not_ready {
-    padding-top: 100px;
-    /* padding-left: 200px; */
+    padding-top: 150px;
     text-align: center;
 }
 
