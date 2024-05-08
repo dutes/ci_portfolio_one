@@ -109,9 +109,9 @@ main {
 }
 
 
-p {
+/* p {
     font-family: robo;
-}
+} */
 
 #welcome {
     padding-top: 100px;
@@ -121,9 +121,21 @@ p {
 
 /*web apps*/
 
-#web_app_main {
+#web_app_main, #web_app_form  { 
     padding-top: 100px;
+    display: block;
+    margin: auto;
     text-align: center;
+}
+
+
+#web_app_form {
+    background-color: rgb(110, 169, 160); /* setting background of the recepie box*/
+    padding: 20px; /* setting padding and margins*/
+    max-width: 615px; /*make it so the form don't take up the entire width*/
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+
 }
 
 #not_ready {
@@ -131,14 +143,22 @@ p {
     text-align: center;
 }
 
-#web_app_form {
-    background-color: rgb(110, 169, 160); /* setting background of the recepie box*/
-    padding: 20px; /* setting padding and margins*/
-    margin: 20px auto;
-    max-width: 615px; /*make it so the recepie cards don't take up the entire width*/
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 3%;
+
+/* thanks for the email address page */
+#thank_you {
+    padding-top: 100px;
+    margin: auto;
     text-align: center;
+}
+
+#happy_bot{
+    background-image: url('../images/chef_o_mat_happy.webp'); /*image link in the assets folder*/
+    /* height: 200px; */
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; /*again making sure the hero image stays centered in the space provided */
 }
 
 
@@ -206,12 +226,6 @@ p {
 
 
 
-
-#web_app_main {
-    padding-top: 100px;
-    padding-left: 200px;
-    text-align: center;
-}
 
 
 
