@@ -1,337 +1,345 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
-    padding: 0; /*adding universal settings for site */
-    margin: 0;
-    box-sizing: border-box; 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    height:100%; /*make the body take all the height*/
-    font-family: Lato, sans-serif; /*defining font for the body - not sure if best way to do it - will experiment*/
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-#hero-image {
-    background-image: url('../images/chef0mat.webp'); /*image link in the assets folder*/
-    background-size: cover; /*make sure the image fits space provided*/
-    background-position: center; /*again making sure the hero image stays centered in the space provided */
-    position: fixed; /* keeps the image in posion */
-    width: 200px; /* Set the width of the image */
-    height: 200px; /* Set the height of the image */
-    top: 0; /* Adjust the top position*/
-    left: 7px; /* Center the image */
-    border-radius: 50%; /* Makes the image round */
-    z-index: 15; /* Lower than the header to allow text to scroll under it */
-    /* box-shadow: 1px 1px #3a3a3a; not sure if I want to have this or not. Still experimenting */
-}
-
+/* Styling for mobile first */
+#hero-image,
 #hero-image-sad {
-    background-image: url('../images/chef0mat_sad.webp'); /*image link in the assets folder*/
-    background-size: cover; /*make sure the image fits space provided*/
-    background-position: center; /*again making sure the hero image stays centered in the space provided */
-    position: fixed; /* keeps the image in posion */
-    width: 200px; /* Set the width of the image */
-    height: 200px; /* Set the height of the image */
-    top: 0; /* Adjust the top position*/
-    left: 7px; /* Center the image */
-    border-radius: 50%; /* Makes the image round */
-    z-index: 15; /* Lower than the header to allow text to scroll under it */
-    /* box-shadow: 1px 1px #3a3a3a; not sure if I want to have this or not. Still experimenting */
+  display: none; /* Corrected 'hidden' to 'none' */
 }
-
 
 header {
-    background-color: rgb(110, 169, 160); /* Teal */
-    color: #F3F4F6; /* Cream */
-    padding: 1rem 2rem; /* keep text in header in the middle */
-    position: fixed; /* make sure the header isn't moveable */
-    height: 100px; /* went with 100px for both header and footer */
-    top:0; /*put it to the top of the page */
-    width: 100%; /*make sure the header goes the full width*/
-    box-shadow: 0 2px 5px #3a3a3a; /*adding a drop shadow for looks */
-    display: flex; /*making the header responsive */
-    justify-content: flex-end; /*make the page links stick to the right hand side when resizing */
-    z-index: 10; /*make body go under the header on scrolling */
-    font-family: Lato, sans-serif; /* adding the lato font type for now. Will be looking at fonts once I have more content */
-}
-
-/* Navigation handling code */
-
-#nav-toggle {
-    display: none;
+  background-color: rgb(110, 169, 160); /* Teal */
+  color: #f3f4f6; /* Cream */
+  padding: 1rem 2rem;
+  position: fixed;
+  height: 100px;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px #3a3a3a;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;
 }
 
 .nav-toggle-label {
-    display:none;
+  display: block; /* Display the burger menu icon on mobile */
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 21;
+  font-size: 2em;
+}
+
+#nav-toggle {
+  opacity: 0; /* Invisible but functional */
+  width: 40px;
+  height: 40px;
+  z-index: -1;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(110, 169, 160, 0.95); /* Semi-transparent teal */
+  display: flex;
+  justify-content: center; /* Center the links */
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Show the nav when toggle is checked */
+#nav-toggle:checked ~ nav {
+  transform: translateX(0); /* Trigger the animation on tapping checkbox */
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 20px;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Stack the links vertically for mobile */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-    margin-left: 20px;
-    padding-inline: 15px;
-    font-size: large;
-    text-transform: uppercase;
+  margin: 10px 0;
 }
 
 nav ul li a {
-    color: #36454F; /* Charcoal Gray */
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    transform: scale(1.1); /*not working I guess because of inherited css, will figure it out later or ditch it*/
+  color: #36454f; /* Charcoal Gray */
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 nav ul li a.active {
-    color: rgb(250, 213, 134); /* Mustard Yellow */
+  color: rgb(250, 213, 134); /* Mustard Yellow */
 }
-
-
-/*main content area of the pages */
 
 main {
-    padding: 20px; /*give some space around the content */
-    padding-top: 100px; /*push it down a bit to keep it away from the hero - not sure if I like it, will lookat it after content is finalise*/
-    background-color: rgb(255, 249, 217); /* Cream */
-    min-height: calc(100vh - 100px); /*I wanted to make the main expand to take up the avaliable space when content wasn't there */
-    overflow:auto /* want to keep the footer on screen and have the content scroll - will test this on devices when more content is added */
+  padding: 20px;
+  padding-top: 100px;
+  background-color: rgb(255, 249, 217); /* Cream */
+  min-height: calc(100vh - 100px);
+  overflow: auto;
 }
 
-
-/* p {
-    font-family: robo;
-} */
-
-#welcome {
-    padding-top: 100px;
-    padding-left: 200px;
-    text-align: center;
+/*===============MAIN PAGE =========*/
+#main_welcome {
+  padding-top: 100px;
+  padding-left: 10px;
 }
 
-/*web apps*/
-
-#web_app_main, #web_app_form  { 
-    padding-top: 100px;
-    display: block;
-    margin: auto;
-    text-align: center;
+#main_benefits {
+  padding: 15px 10px;
+}
+#main_benefits h2 {
+  padding-bottom: 3px;
 }
 
-
-#web_app_form {
-    background-color: rgb(110, 169, 160); /* setting background of the recepie box*/
-    padding: 20px; /* setting padding and margins*/
-    max-width: 615px; /*make it so the form don't take up the entire width*/
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 3%;
-
+#main_staples {
+  padding: 5px 10px;
 }
-
-#not_ready {
-    padding-top: 150px;
-    text-align: center;
-}
-
-
-/* thanks for the email address page */
-#thank_you {
-    padding-top: 100px;
-    margin: auto;
-    text-align: center;
-}
-
-#happy_bot{
-    background-image: url('../images/chef_o_mat_happy.webp'); /*image link in the assets folder*/
-    /* height: 200px; */
-    width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; /*again making sure the hero image stays centered in the space provided */
-}
-
-
-/*Seasonal recepies page*/
-
-#seasonal_main {
-    padding-top: 100px;
-    /* padding-left: 200px; */
-    text-align: center;
-}
-
-#recepie {
-    background-color: rgb(110, 169, 160); /* setting background of the recepie box*/
-    padding: 20px; /* setting padding and margins*/
-    margin: 20px auto;
-    max-width: 615px; /*make it so the recepie cards don't take up the entire width*/
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 3%;
-} 
-
-.recepie_title {
-    max-width: 75%;
-}
-
-.ingredients {
-    max-width: 50%;
-}
-
-.recipe_instructions {
-    padding: 10px;
-}
-
-.instructions {
-    padding: 15px;
-
-}
-
-
-#recepie.ul {
-    float: left;
-    width: 50%;
-    list-style-type: none;
-
-}
-
-
-#recepie.ol {
-    float: left;
-
-}
-
-#recepie ul, #recepie ol {
-    margin-left: 50px; /* Directly setting a 15px left margin */
+#main_staples h2 {
+  padding-bottom: 3px;
 }
 
 #recepie img {
-    float: right;
-    height: auto;
-    max-height: fit-content;
-    margin-left: 30px;
-    margin-top: -20px; 
-
+  height: auto;
+  max-height: fit-content;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
-
-
-
-
-
-
-/* footer */
+/*=============== Footer =========*/
 footer {
-    background-color: rgb(110, 169, 160); /* Teal */
-    height: 100px; 
-    width: 100%;
-    box-shadow: 0 2px 5px #3a3a3a;
-    z-index: 100; 
+  background-color: rgb(110, 169, 160); /* Teal */
+  height: 100px;
+  width: 100%;
+  box-shadow: 0 2px 5px #3a3a3a;
+  z-index: 100;
 }
 
 #social-networks {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
 }
 
 #social-networks i {
-    font-size: 260%;
-    padding: 100% 30% 20% 30%; 
+  font-size: 260%;
+  padding: 100% 30% 20% 30%;
 }
 
 .fa-brands {
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .fa-brands:hover {
-    transform: scale(1.1); 
-} 
+  transform: scale(1.1);
+}
 
+/* Hero image styling */
+#hero-image {
+  background-image: url("../images/chef0mat.webp");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 7px;
+  border-radius: 50%;
+  z-index: 15;
+}
 
-@media (max-width:525px) {
-    /* Styling for full screen burger nav*/
-    #hero-image {
-        display: hidden;
-    }
+#hero-image-sad {
+  background-image: url("../images/chef0mat_sad.webp");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 7px;
+  border-radius: 50%;
+  z-index: 15;
+}
 
+/* Main content area of the pages */
+#welcome {
+  padding-top: 100px;
+  padding-left: 200px;
+  text-align: center;
+}
 
-    nav {
-        position: fixed; /* Fixed position to cover the whole screen */
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        top: 0;
-        left: 0;
-        background-color:  rgba(110, 169, 160, 0.95); /* Semi-transparent teal background so you can still see the page content */
-        display: flex; /* Using flex to center the links */
-        align-items: center; /* keep the links in the middle of the menu */
-        z-index: 20; /* always stay on top */
-        transform: translateX(100%); /* start transition in from right hand side*/
-        transition: transform 0.3s ease-in-out; /* animation timing for transition */
-    }
+/* Web apps */
+#web_app_main,
+#web_app_form {
+  padding-top: 100px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
 
-    /* Show the nav when toggle is checked */
-    #nav-toggle:checked ~ nav {
-        transform: translateX(0); /* trigger the animation on tapping checkbox*/
-    }
+#web_app_form {
+  background-color: rgb(110, 169, 160);
+  padding: 20px;
+  max-width: 615px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 3%;
+}
 
-    /* Styling for nav items to enhance visibility and aesthetics */
-    nav ul {
-        width: 100%; /* Full width of the nav */
-        text-align: center; /* Center the text of links */
-        flex-direction: column; /* stack the links vertically */
-        align-items: center; /*keep them in the middle */
-        text-align: center; /*keep them in the middle */
-    }
+#not_ready {
+  padding-top: 150px;
+  text-align: center;
+}
 
+/* Thanks for the email address page */
+#thank_you {
+  padding-top: 100px;
+  margin: auto;
+  text-align: center;
+}
 
+#happy_bot {
+  background-image: url("../images/chef_o_mat_happy.webp");
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 
-    nav ul li a {
-        font-size: 24px; /* Larger font size for better readability */
-        padding: 50px; /* wide spacing between links for better tapping*/
-        display: block; /* keep links on their own line */
+/* Seasonal recipes page */
+#seasonal_main {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#recepie {
+  background-color: rgb(110, 169, 160);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 615px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.recepie_title {
+  max-width: 75%;
+  flex: 1 1 100%;
+}
+
+.ingredients {
+  flex: 1 1 100%;
+  padding-bottom: 10px;
+}
+
+.recipe_instructions {
+  padding: 10px;
+  flex: 1 1 100%;
+  text-align: left;
+}
+
+.instructions {
+  flex: 1 1 100%;
+}
+
+#recepie ul,
+#recepie ol {
+  margin-left: 50px; /* Directly setting a left margin */
+}
+
+#recepie img {
+  height: auto; /* Ensure the height adjusts */
+  max-height: 200px; /* Ensure the image doesn't break bounds */
+  max-width: 100%;
+  margin: 10px auto;
+  display: block;
+}
+
+/* styles for larger screens */
+@media (min-width: 550px) {
+  .nav-toggle-label,
+  #nav-toggle {
+    display: none; /* Hide burger menu icon and checkbox on larger screens */
+  }
+
+  nav {
+    position: static; /* Reset position for desktop */
+    height: auto;
+    width: auto;
+    background: none;
+    transform: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: row; /* Align items horizontally */
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Horizontal spacing for nav items */
+  }
+
+  nav ul li a {
+    padding: 10px 15px; /* Adjust padding for nav links */
+  }
+
+  #recepie {
+    border-radius: 5%;
+  }
+
+  #hero-image,
+  #hero-image-sad {
+    display: block;
+  }
+
+  /* New CSS for seasonal page images */
+  /* Hide images for screens smaller than 350px */
+  @media (max-width: 350px) {
+    header {
+      padding: 1rem; /* Adjust padding to fit smaller screens */
     }
 
     .nav-toggle-label {
-        display: block; /*hide the check box*/
-        position: fixed; /*keep it fixed in the top right */
-        top: 40px; /*next few lines are tweaking display of bureger menu icon */
-        right: 20px; 
-        z-index: 21; 
-        font-size: 2em;
+      top: 20px; /* Adjust the top position for smaller screens */
+      right: 10px; /* Ensure it doesn't go off the screen */
     }
 
-    #nav-toggle {
-       opacity: 0; /*  Invisible but functional hide the check box by making it invisible*/ 
-       width: 40px; /* make sure there's a big enough tapping zone for it to work */
-       height: 40px; /*same as above */
-       z-index: 21; /*make sure its not pushed under any other page element */
-    }
-/*seasonal recepie page*/
     #recepie {
-        background-color: rgb(110, 169, 160); /* setting background of the recepie box*/
-        padding: 20px; /* setting padding and margins*/
-        margin: 20px auto;
-        max-width: 100%; /*make it so the recepie cards don't take up the entire width*/
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    } 
-    
- #recepie img {
-        float: center; /*make image position more responsive*/
-        height: auto; /*ensure the height adjusts*/
-        max-height: fit-content; /*enusre the image doesn't break bounds*/
-        margin-left: 30px; /*keep image in a good postion with respect to the ingredients list*/
-        margin-top: -20px; /*keep image in a good postion with respect to the ingredients list*/
+      padding: 10px; /* Reduce padding for smaller screens */
+      margin: 10px;
     }
-    
+
+    #recepie img {
+      display: none;
+    }
+  }
 }
