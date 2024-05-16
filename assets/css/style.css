@@ -15,8 +15,8 @@ body {
 }
 
 /* Styling for mobile first */
-#hero-image,
-#hero-image-sad {
+#hero_image,
+#hero_image_sad {
   display: none; /* Corrected 'hidden' to 'none' */
 }
 
@@ -35,7 +35,7 @@ header {
   z-index: 10;
 }
 
-.nav-toggle-label {
+.nav_toggle_label {
   display: block; /* Display the burger menu icon on mobile */
   position: fixed;
   top: 40px;
@@ -44,7 +44,7 @@ header {
   font-size: 2em;
 }
 
-#nav-toggle {
+#nav_toggle {
   opacity: 0; /* Invisible but functional */
   width: 40px;
   height: 40px;
@@ -66,7 +66,7 @@ nav {
 }
 
 /* Show the nav when toggle is checked */
-#nav-toggle:checked ~ nav {
+#nav_toggle:checked ~ nav {
   transform: translateX(0); /* Trigger the animation on tapping checkbox */
 }
 
@@ -123,7 +123,11 @@ main {
   padding-bottom: 3px;
 }
 
-#recepie img {
+#staples_image_left, staples_image_right {
+display: none;
+}
+
+#recipe img {
   height: auto;
   max-height: fit-content;
   margin-left: 30px;
@@ -139,14 +143,14 @@ footer {
   z-index: 100;
 }
 
-#social-networks {
+#social_networks {
   text-align: center;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
 
-#social-networks i {
+#social_networks i {
   font-size: 260%;
   padding: 100% 30% 20% 30%;
 }
@@ -160,7 +164,7 @@ footer {
 }
 
 /* Hero image styling */
-#hero-image {
+#hero_image {
   background-image: url("../images/chef0mat.webp");
   background-size: cover;
   background-position: center;
@@ -173,7 +177,7 @@ footer {
   z-index: 15;
 }
 
-#hero-image-sad {
+#hero_image-sad {
   background-image: url("../images/chef0mat_sad.webp");
   background-size: cover;
   background-position: center;
@@ -223,7 +227,7 @@ footer {
 }
 
 #happy_bot {
-  background-image: url("../images/chef_o_mat_happy.webp");
+  background-image: url("../images/chef0mat_happy.webp");
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
@@ -237,7 +241,7 @@ footer {
   text-align: center;
 }
 
-#recepie {
+#recipe {
   background-color: rgb(110, 169, 160);
   padding: 20px;
   margin: 20px auto;
@@ -247,7 +251,7 @@ footer {
   flex-direction: column;
 }
 
-.recepie_title {
+.recipe_title {
   max-width: 75%;
   flex: 1 1 100%;
 }
@@ -267,12 +271,12 @@ footer {
   flex: 1 1 100%;
 }
 
-#recepie ul,
-#recepie ol {
+#recipe ul,
+#recipe ol {
   margin-left: 50px; /* Directly setting a left margin */
 }
 
-#recepie img {
+#recipe img {
   height: auto; /* Ensure the height adjusts */
   max-height: 200px; /* Ensure the image doesn't break bounds */
   max-width: 100%;
@@ -282,8 +286,8 @@ footer {
 
 /* styles for larger screens */
 @media (min-width: 550px) {
-  .nav-toggle-label,
-  #nav-toggle {
+  .nav_toggle_label,
+  #nav_toggle {
     display: none; /* Hide burger menu icon and checkbox on larger screens */
   }
 
@@ -312,33 +316,64 @@ footer {
     padding: 10px 15px; /* Adjust padding for nav links */
   }
 
-  #recepie {
+  .staples_container {
+    display: flex;
+    align-items: flex-start;
+    /* margin: 20px; */
+  }
+
+  #staples_image_right, #staples_image_left {
+    display: block;
+    width:300px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  #staples_image_right {
+    order: 2;
+    margin-left:20px;
+  }
+
+  #staples_image_left {
+    order: 1;
+    margin-right: 20px;
+  }
+
+
+
+  .staples_text {
+    flex: 1;
+  }
+
+  #recipe {
     border-radius: 5%;
   }
 
-  #hero-image,
-  #hero-image-sad {
+  #hero_image,
+  #hero_image_sad {
     display: block;
   }
 
-  /* New CSS for seasonal page images */
   /* Hide images for screens smaller than 350px */
   @media (max-width: 350px) {
     header {
       padding: 1rem; /* Adjust padding to fit smaller screens */
     }
 
-    .nav-toggle-label {
+    .nav_toggle_label {
       top: 20px; /* Adjust the top position for smaller screens */
       right: 10px; /* Ensure it doesn't go off the screen */
     }
 
-    #recepie {
+    #recipe {
       padding: 10px; /* Reduce padding for smaller screens */
       margin: 10px;
     }
 
-    #recepie img {
+    #recipe img {
+      display: none;
+    }
+    #staples_image_right, #staples_image_left {
       display: none;
     }
   }
