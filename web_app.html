@@ -1,123 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web App</title>
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="assets/favicon/favicon-96x96.png"
-    />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <header>
-      <input type="checkbox" id="nav_toggle" name="nav_toggle" />
-      <label for="nav_toggle" class="nav_toggle_label"
-        ><i class="fa-solid fa-bars" style="color: #ffd785"></i
-      ></label>
-      <nav>
-        <ul>
-          <li><a href="index.html">Main</a></li>
-          <li><a href="web_app.html" class="active">Web App</a></li>
-          <li><a href="seasonal.html">Seasonal</a></li>
-        </ul>
-      </nav>
-    </header>
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <div id="hero-image"></div>
+  <title>Web App</title>
 
-    <main>
-      <div id="web_app_main">
-        <h1>Welcome to the Chef-o-mat</h1>
-        <p>
-          Here's where you will be able to ask the chef o matic to help you use
-          up those random ingredients
-        </p>
-      </div>
-      <br />
-      <div id="web_app_form">
-        <h2>
-          Please fill in your 5 ingredients and any special interest you have in
-          the recipes created, veggie, vegan, Mexican, French?
-        </h2>
-        <br />
-        <h2>Just specify and I'll see what I can do!</h2>
-        <br />
-        <form action="not_there.html" method="GET">
-          <label for="ingredient_1"> Ingredient One: </label><br />
-          <input type="text" id="ingredient_1" name="ingredient_1" /><br />
-          <label for="ingredient_2"> Ingredient Two: </label><br />
-          <input type="text" id="ingredient_2" name="ingredient_2" /><br />
-          <label for="ingredient_3"> Ingredient Three: </label><br />
-          <input type="text" id="ingredient_3" name="ingredient_3" /><br />
-          <label for="ingredient_4"> Ingredient Four: </label><br />
-          <input type="text" id="ingredient_4" name="ingredient_4" /><br />
-          <label for="ingredient_5"> Ingredient Five: </label><br />
-          <input type="text" id="ingredient_5" name="ingredient_5" /><br />
-          <label for="special_instruction"> Special Interest: </label><br />
-          <input
-            type="text"
-            id="special_instruction"
-            name="special_instruction"
-          /><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </main>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+</head>
 
-    <footer>
-      <ul id="footer">
-        <ul id="social_networks">
-          <li>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Vist our twitter page - Opens in a new tab"
-              ><i class="fa-brands fa-square-twitter" style="color: #ffd785"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener"
-              aria-label="Vist our instagram page - Opens in a new tab"
-              ><i
-                class="fa-brands fa-square-instagram"
-                style="color: #ffd785"
-              ></i
-            ></a>
-          </li>
-        </ul>
+<body>
+  <header>
+    <input type="checkbox" id="nav_toggle" name="nav_toggle">
+    <label for="nav_toggle" class="nav_toggle_label"><i class="fa-solid fa-bars" style="color: #ffd785"></i></label>
+    <nav>
+      <ul>
+        <li><a href="index.html">Main</a></li>
+        <li><a href="web_app.html" class="active">Web App</a></li>
+        <li><a href="seasonal.html">Seasonal</a></li>
       </ul>
-    </footer>
-    <script
-      src="https://kit.fontawesome.com/f55d50b855.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </nav>
+  </header>
+
+  <div id="hero-image"></div>
+
+  <main>
+    <div id="web_app_main">
+      <h1>Welcome to the Chef-o-mat</h1>
+      <p>
+        Here's where you will be able to ask the chef o matic to help you use
+        up those random ingredients
+      </p>
+    </div>
+    <div id="web_app_form">
+      <h2>
+        Please fill in your 5 ingredients and any special interest you have in
+        the recipes created, veggie, vegan, Mexican, French?
+      </h2>
+      <h2>Just specify and I'll see what I can do!</h2>
+      <form action="not_there.html" method="GET">
+        <label for="ingredient_1"> Ingredient One: </label><br>
+        <input type="text" id="ingredient_1" name="ingredient_1"><br>
+        <label for="ingredient_2"> Ingredient Two: </label><br>
+        <input type="text" id="ingredient_2" name="ingredient_2"><br>
+        <label for="ingredient_3"> Ingredient Three: </label><br>
+        <input type="text" id="ingredient_3" name="ingredient_3"><br>
+        <label for="ingredient_4"> Ingredient Four: </label><br>
+        <input type="text" id="ingredient_4" name="ingredient_4"><br>
+        <label for="ingredient_5"> Ingredient Five: </label><br>
+        <input type="text" id="ingredient_5" name="ingredient_5"><br>
+        <label for="special_instruction"> Special Interest: </label><br>
+        <input type="text" id="special_instruction" name="special_instruction"><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <ul id="footer">
+        <li>
+            <ul id="social_networks">
+                <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Vist our twitter page - Opens in a new tab"><i class="fa-brands fa-square-twitter"
+                            style="color: #ffd785"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Vist our instagram page - Opens in a new tab"><i
+                            class="fa-brands fa-square-instagram" style="color: #ffd785"></i></a>
+                </li>
+            </ul>
+        </li>    
+    </ul>
+</footer>
+  <script src="https://kit.fontawesome.com/f55d50b855.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

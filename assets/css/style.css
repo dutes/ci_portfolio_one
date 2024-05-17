@@ -128,7 +128,7 @@ main {
   display: none;
 }
 
-#recipe img {
+.recipe img {
   height: auto;
   max-height: fit-content;
   margin-left: 30px;
@@ -242,7 +242,7 @@ footer {
   text-align: center;
 }
 
-#recipe {
+.recipe {
   background-color: rgb(110, 169, 160);
   padding: 20px;
   margin: 20px auto;
@@ -272,12 +272,12 @@ footer {
   flex: 1 1 100%;
 }
 
-#recipe ul,
-#recipe ol {
+.recipe ul,
+.recipe ol {
   margin-left: 50px; /* Directly setting a left margin */
 }
 
-#recipe img {
+.recipe img {
   height: auto; /* Ensure the height adjusts */
   max-height: 200px; /* Ensure the image doesn't break bounds */
   max-width: 100%;
@@ -352,7 +352,7 @@ footer {
     padding-bottom: 15px;
   }
 
-  #recipe {
+  .recipe {
     border-radius: 5%;
   }
 
@@ -372,12 +372,12 @@ footer {
       right: 10px; /* Ensure it doesn't go off the screen */
     }
 
-    #recipe {
+    .recipe {
       padding: 10px; /* Reduce padding for smaller screens */
       margin: 10px;
     }
 
-    #recipe img {
+    .recipe img {
       display: none;
     }
     #staples_image_right,
