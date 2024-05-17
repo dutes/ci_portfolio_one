@@ -123,7 +123,7 @@ main {
   padding-bottom: 3px;
 }
 
-#staples_image_left, staples_image_right {
+#staples_image_left, #staples_image_right {
 display: none;
 }
 
