@@ -285,7 +285,7 @@ footer {
 }
 
 /* styles for larger screens */
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   .nav_toggle_label,
   #nav_toggle {
     display: none; /* Hide burger menu icon and checkbox on larger screens */
