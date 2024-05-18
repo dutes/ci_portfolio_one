@@ -15,12 +15,6 @@ body {
   background-color: rgb(255, 249, 217); /* Cream */
 }
 
-/* Styling for mobile first */
-#hero_image,
-#hero_image_sad {
-  display: none; /* Corrected 'hidden' to 'none' */
-}
-
 header {
   background-color: rgb(110, 169, 160); /* Teal */
   color: #f3f4f6; /* Cream */
@@ -178,7 +172,7 @@ footer {
   z-index: 15;
 }
 
-#hero_image-sad {
+#hero_image_sad {
   background-image: url("../images/chef0mat_sad.webp");
   background-size: cover;
   background-position: center;
@@ -355,12 +349,13 @@ footer {
     border-radius: 5%;
   }
 
-  #hero_image,#hero_image_sad {
+  #hero_image,
+  #hero_image_sad {
     display: block;
   }
-
+}
   /* Hide images for screens smaller than 350px */
-  @media (max-width: 350px) {
+  @media (max-width: 349px) {
     header {
       padding: 1rem; /* Adjust padding to fit smaller screens */
     }
@@ -382,5 +377,9 @@ footer {
     #staples_image_left {
       display: none;
     }
+
+    #hero_image,
+    #hero_image_sad {
+      display: none;
+    }
   }
-}
