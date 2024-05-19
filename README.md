@@ -4,7 +4,7 @@ Ever found yourself staring at a random assortment of ingredients and a few pant
 Whether you are a practiced home cook or someone who couldn't boil an egg - this site has your back. Simply input five of your ingredients and any particular cuisine style, and the Chef-O-Mat will give you some simple, delicious, and creative meal recipes.
 Turn the last meal time before the week's grocery shop into a fun culinary playground!
 
-[![Responsive Mockup](https://ui.dev/amiresponsive?url=https://dutes.github.io/ci_portfolio_one/index.html)](https://ui.dev/amiresponsive?url=https://dutes.github.io/ci_portfolio_one/index.html)
+[![Responsive Mockup](assets/readme_images/amiresponsive.png)]
 
 ## Features (envisioned)
 
