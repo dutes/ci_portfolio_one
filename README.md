@@ -19,6 +19,7 @@ Turn the last meal time before the week's grocery shop into a fun culinary playg
   - [Unfixed Issues](#unfixed-issues)
 - [Deployment](#deployment)
 - [References](#references)
+- [Credits](#credits)
 
 
 ## Wire Frame
@@ -171,3 +172,15 @@ Used for CSS.
 ***Dall-E***
 [Dall-E](https://openai.com/index/dall-e-3/)
 Used for image generation of Chef-O-Mat and assoicated images.
+
+## Credits and Thanks
+
+Credit for the images on the seasonal recipies page:
+
+[Garlic Butter Shrimp](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZa8vG5fwMOOFhih7WsGICvPX7iY7wlwIx6BvK3PiDRlpoM4M)
+
+[Balsamic Glazed Chicken](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQoz_a9HZkLTF0k7TRB4ycaoZvQ8JTU-f2afZ2ddLisYmxgFZ)
+
+[Honey Baked Pears](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_ifQn_GnOzInYUVMLDLDXrsbkUXZY4Qc5vEJ_EzqkCtaSENA2)
+
+Thanks to my mentor on the project, Daisy Mc Girr for all the help and advice.
