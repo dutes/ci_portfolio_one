@@ -162,14 +162,21 @@ The process was as follows:
  ## References
  
  ***W3C Schools***
+
  [W3C](https://www.w3schools.com/)
  Used extensively for HTML and CSS learnings.
 
 ***CSS-Tricks***
+
 [CSStricks](https://css-tricks.com/)
 Used for CSS.
 
+***Excel to Markdown***
+[Excel to Markdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/)
+Used for tables in testing section
+
 ***Dall-E***
+
 [Dall-E](https://openai.com/index/dall-e-3/)
 Used for image generation of Chef-O-Mat and assoicated images.
 
