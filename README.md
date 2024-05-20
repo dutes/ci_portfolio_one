@@ -88,3 +88,22 @@ Below is an extract from the test script used to validate the project:
 |          | Tabs mobile                              | 1. Open the main page in a mobile browser<br>Verify A)<br>2. Open each page of the site in turn<br>Verify B)                                                                                                                                                                                                                                                                                                                                                                                      | A) The tab has the correct favicon displayed.<br>B) Each page displays the correct favicon.                                                                                                                                                                           | pass    |
 |          | Bookmark mobile                          | 1. Open the main page in a mobile browser<br>2. Add a bookmark for the site<br>3. Open the browser's bookmarks<br>Verify A)                                                                                                                                                                                                                                                                                                                                                                      | A) The favicon is displayed correctly in the bookmarks.                                                                                                                                                                                                          | pass    |
 |          | Add to home - mobile                     | 1. Open the page in a mobile browser<br>2. Choose to add the site to the home page<br>Verify A)                                                                                                                                                                                                                                                                                                                                                                                                       | A) The site is represented by the correct favicon on the test device's home screen.                                                                                                                                                                              | pass    |
+
+
+In addition coverage testing was performed on a selection of mobile devices:
+
+|             | Main page | Web App | Not there | Thank you | Seasonal | Favicons |
+| ----------- | --------- | ------- | --------- | --------- | -------- | -------- |
+| Pixel 8     | Pass      | Pass    | Pass      | Pass      | Pass     | Pass     |
+| Pixel 4     | Pass      | Pass    | Pass      | Pass      | Pass     | Pass     |
+| Nokia t20   | Pass      | Pass    | Pass      | Pass      | Pass     | Pass     |
+| Iphone 8+   | Pass      | Pass    | Pass      | Pass      | Pass     | Pass     |
+| Ipad Pro 13 | Pass      | Pass    | Pass      | Pass      | Pass     | Pass     |
+
+Desktop browswer coverage was also completed as follows:
+
+|            | Chrome | Safari | Firefox | Edge | Opera | Arc  | Resulotion range |
+| ---------- | ------ | ------ | ------- | ---- | ----- | ---- | ---------------- |
+| Windows 11 | Pass   | Pass   | Pass    | Pass | Pass  | Pass | 250px - 3440px   |
+| Mac OS     | Pass   | Pass   | Pass    | Pass | Pass  | Pass | 250px - 2560px   |
+
