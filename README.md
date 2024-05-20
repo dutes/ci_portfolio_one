@@ -100,10 +100,21 @@ In addition coverage testing was performed on a selection of mobile devices:
 | Iphone 8+   | Pass      | Pass    | Pass      | Pass      | Pass     | Pass     |
 | Ipad Pro 13 | Pass      | Pass    | Pass      | Pass      | Pass     | Pass     |
 
-Desktop browswer coverage was also completed as follows:
+Desktop browser coverage was also completed as follows:
 
-|            | Chrome | Safari | Firefox | Edge | Opera | Arc  | Resulotion range |
+|            | Chrome | Safari | Firefox | Edge | Opera | Arc  | Resolution range |
 | ---------- | ------ | ------ | ------- | ---- | ----- | ---- | ---------------- |
 | Windows 11 | Pass   | Pass   | Pass    | Pass | Pass  | Pass | 250px - 3440px   |
 | Mac OS     | Pass   | Pass   | Pass    | Pass | Pass  | Pass | 250px - 2560px   |
 
+**Accessibility Testing:**
+
+Accessibility was considered from the very beginning of the project, and best practices for accessibility were followed. To validate the accessibility of the site, I ran the webpages through the Lighthouse and WAVE testing tools.
+
+
+![Lighthouse results](assets/readme_images/lighthouse_result.png)
+
+
+![WAVE](assets/readme_images/wave_result.png)
+
+The Lighthouse test gave the site a 95% accessibility score. While this is a strong indication of the site's accessibility, Lighthouse alone is not considered a comprehensive measure. The WAVE test identified one contrast error on the active navigation page color. I attempted to address this issue, but due to the constraints of using only HTML and CSS, I was unable to implement a satisfactory solution. In a future project, I plan to enhance the navigation experience by adding an animated color-contrasting background for the active page. This will help provide better accessible contrast and improve the overall user experience.
