@@ -70,6 +70,7 @@ The Seasonal page currently contains some sample recipes showcasing the index ca
 
 ## Testing
 
+**General Testing**
 Testing for the project was initially conducted on an ad hoc basis, closely following a rapid prototyping methodology. This approach involved creating, testing, and fixing features in quick succession, which facilitated rapid identification and resolution of issues during development. Once the project reached feature completeness, a more structured testing process was adopted to ensure comprehensive validation of the site's functionality and performance.
 
 Below is an extract from the test script used to validate the project:
@@ -117,4 +118,38 @@ Accessibility was considered from the very beginning of the project, and best pr
 
 ![WAVE](assets/readme_images/wave_result.png)
 
+
+**Validation Testing**
+I ran my site through the W3C HTML and CCSS validators and no errors were found. 
+Results available here:
+[HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdutes.github.io%2Fci_portfolio_one%2Findex.html)
+
+[CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdutes.github.io%2Fci_portfolio_one%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+**Unfixed Issues**
 The Lighthouse test gave the site a 95% accessibility score. While this is a strong indication of the site's accessibility, Lighthouse alone is not considered a comprehensive measure. The WAVE test identified one contrast error on the active navigation page color. I attempted to address this issue, but due to the constraints of using only HTML and CSS, I was unable to implement a satisfactory solution. In a future project, I plan to enhance the navigation experience by adding an animated color-contrasting background for the active page. This will help provide better accessible contrast and improve the overall user experience.
+
+## Deployment
+The site is deployed on GitHub Pages.
+The process was as follows:
+ - Open the github repository, navigate to settings tab.
+ - Select Master from the source drop-down.
+ - The deployment process will begin and progress can be observed with the ribbon diplay on the right hand side of the Github page.
+
+ The live link to the site is:
+
+ [Chef-O-Mat](https://dutes.github.io/ci_portfolio_one/index.html)
+
+ ## References
+ 
+ ***W3C Schools***
+ [W3C](https://www.w3schools.com/)
+ Used extensively for HTML and CSS learnings.
+
+***CSS-Tricks***
+[CSStricks](https://css-tricks.com/)
+Used for CSS.
+
+***Dall-E***
+[Dall-E](https://openai.com/index/dall-e-3/)
+Used for image generation of Chef-O-Mat and assoicated images.
