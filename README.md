@@ -6,6 +6,21 @@ Turn the last meal time before the week's grocery shop into a fun culinary playg
 
 ![Chef-O-Mat](assets/images/chef0mat.webp)
 
+## Table of Contents
+- [Wire Frame](#wire-frame)
+- [Features](#features)
+    -[Delivered](#delivered-as-part-of-project-1)
+    -[Envisioned](#features-envisioned)
+- [Site map](#site-map)
+- [Testing](#testing)
+    -[General Testing](#general-testing)
+    -[Accessibility Testing](#accessibility-testing)
+    -[Validation Testing](#validation-testing)
+    -[Unfixed Issues](#unfixed-issues)
+- [Deployment](#deployment)
+- [References](#references)
+
+
 ## Wire Frame
 
 Here is the wirefame which formed the foundation of the website's design. It specifies the desired layout and helped to guide understanding of the CSS styling.
@@ -13,7 +28,9 @@ Here is the wirefame which formed the foundation of the website's design. It spe
 ![Wire Frame](assets/readme_images/wire_frame.png)
 
 
-## Features (Delivered as part of Project 1)
+## Features 
+
+### (Delivered as part of Project 1)
 **LO1: Design an interactive Front-End web application using HTML and CSS based on the principles of user experience design, accessibility and responsivity.**
 
 I designed and built a multi-page, responsive and mobile first website using HTML and CSS. The design is derived from research as well as my own preferences for the UX of a site. Accessibility was considered from the begining of the project and largely meets ARIA requirements. The site is also fully responsive adapting on the fly to resolutions from 250px to at least 3440px ensuring a consistent user experience.
@@ -37,7 +54,7 @@ Maintainability was built in from the intial project stages with clear naming co
 The entire development of the project has been managed using GitHub as its version control and development environment. Changes have been commited regularly with clear commit messaging allowing a full over view of the progress and milestones of the project's process from concept to submission. 
 
 
-## Features (envisioned)
+### Features (envisioned)
 
 The envisioned features of this project aim to transform the basic, static site  into a dynamic and interactive web application. The primary functionality will be an ingredient input form where users can enter up to five ingredients and select a preferred cuisine style. These inputs will be sent via an API to Chat-GPT, which will generate five recipes based on the user's input. The generated recipes will be returned and displayed in a uniformly styled card format that includes the recipe name, an image, the ingredients list, and preparation instructions. Additional future functionality will enable users to create accounts, save their preferred recipes, and share them on social media. These enhancements will significantly improve user engagement and provide a richer, more immersive user experience.
 
@@ -70,7 +87,7 @@ The Seasonal page currently contains some sample recipes showcasing the index ca
 
 ## Testing
 
-**General Testing**
+### General Testing
 Testing for the project was initially conducted on an ad hoc basis, closely following a rapid prototyping methodology. This approach involved creating, testing, and fixing features in quick succession, which facilitated rapid identification and resolution of issues during development. Once the project reached feature completeness, a more structured testing process was adopted to ensure comprehensive validation of the site's functionality and performance.
 
 Below is an extract from the test script used to validate the project:
@@ -108,7 +125,7 @@ Desktop browser coverage was also completed as follows:
 | Windows 11 | Pass   | Pass   | Pass    | Pass | Pass  | Pass | 250px - 3440px   |
 | Mac OS     | Pass   | Pass   | Pass    | Pass | Pass  | Pass | 250px - 2560px   |
 
-**Accessibility Testing:**
+### Accessibility Testing:
 
 Accessibility was considered from the very beginning of the project, and best practices for accessibility were followed. To validate the accessibility of the site, I ran the webpages through the Lighthouse and WAVE testing tools.
 
@@ -119,14 +136,15 @@ Accessibility was considered from the very beginning of the project, and best pr
 ![WAVE](assets/readme_images/wave_result.png)
 
 
-**Validation Testing**
+### Validation Testing
 I ran my site through the W3C HTML and CCSS validators and no errors were found. 
 Results available here:
+
 [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdutes.github.io%2Fci_portfolio_one%2Findex.html)
 
 [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdutes.github.io%2Fci_portfolio_one%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-**Unfixed Issues**
+### Unfixed Issues
 The Lighthouse test gave the site a 95% accessibility score. While this is a strong indication of the site's accessibility, Lighthouse alone is not considered a comprehensive measure. The WAVE test identified one contrast error on the active navigation page color. I attempted to address this issue, but due to the constraints of using only HTML and CSS, I was unable to implement a satisfactory solution. In a future project, I plan to enhance the navigation experience by adding an animated color-contrasting background for the active page. This will help provide better accessible contrast and improve the overall user experience.
 
 ## Deployment
