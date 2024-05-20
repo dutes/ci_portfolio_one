@@ -34,17 +34,17 @@ Here is the wirefame which formed the foundation of the website's design. It spe
 ### (Delivered as part of Project 1)
 **LO1: Design an interactive Front-End web application using HTML and CSS based on the principles of user experience design, accessibility and responsivity.**
 
-I designed and built a multi-page, responsive and mobile first website using HTML and CSS. The design is derived from research as well as my own preferences for the UX of a site. Accessibility was considered from the begining of the project and largely meets ARIA requirements. The site is also fully responsive adapting on the fly to resolutions from 250px to at least 3440px ensuring a consistent user experience.
+I designed and built a multi-page, responsive and mobile first website using HTML and CSS. The design is derived from research as well as my own preferences for the UX of a site. Accessibility was considered from the beginning of the project and largely meets ARIA requirements. The site is also fully responsive adapting on the fly to resolutions from 250px to at least 3440px ensuring a consistent user experience.
 
 ![Responsive Mockup](assets/readme_images/amiresponsive.png)
 
 **LO2: Test a front-end web application through the development, implementation and deployment stages.**
 
-Throughout the development process, I have maintained a rigourous design, build, test, itterate cycle ensuring both smooth functionality as well as a pleasing, consistent user experience across a wide array of browsers, operating systems and device types. 
+Throughout the development process, I have maintained a rigorous design, build, test, iterate cycle ensuring both smooth functionality as well as a pleasing, consistent user experience across a wide array of browsers, operating systems and device types. 
 
 **LO3: Deploy a Front-End web application to a Cloud platform.**
 
-The Chef-O-Mat site has successfully been deployed to the web via GitHub Pages. The deployment not only assures the site is reachable on the general web, but it was also key to being able to test the design and eliminate bugs. The deployed site was continously updated from the commits on the main project's GitHub repository.
+The Chef-O-Mat site has successfully been deployed to the web via GitHub Pages. The deployment not only assures the site is reachable on the general web, but it was also key to being able to test the design and eliminate bugs. The deployed site was continuously updated from the commits on the main project's GitHub repository.
 
 **LO04: Maximise future maintainability through documentation, code structure and organisation.**
 
@@ -52,7 +52,7 @@ Maintainability was built in from the intial project stages with clear naming co
 
 **LO5: Demonstrate and document the development process through a version control system such as GitHub.**
 
-The entire development of the project has been managed using GitHub as its version control and development environment. Changes have been commited regularly with clear commit messaging allowing a full over view of the progress and milestones of the project's process from concept to submission. 
+The entire development of the project has been managed using GitHub as its version control and development environment. Changes have been committed regularly with clear commit messaging allowing a full over view of the progress and milestones of the project's process from concept to submission. 
 
 
 ### Features (envisioned)
@@ -153,7 +153,7 @@ The site is deployed on GitHub Pages.
 The process was as follows:
  - Open the github repository, navigate to settings tab.
  - Select Master from the source drop-down.
- - The deployment process will begin and progress can be observed with the ribbon diplay on the right hand side of the Github page.
+ - The deployment process will begin and progress can be observed with the ribbon display on the right hand side of the Github page.
 
  The live link to the site is:
 
@@ -175,7 +175,7 @@ Used for image generation of Chef-O-Mat and assoicated images.
 
 ## Credits and Thanks
 
-Credit for the images on the seasonal recipies page:
+Credit for the images on the seasonal recipes page:
 
 [Garlic Butter Shrimp](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThZa8vG5fwMOOFhih7WsGICvPX7iY7wlwIx6BvK3PiDRlpoM4M)
 
