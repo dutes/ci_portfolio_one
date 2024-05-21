@@ -359,36 +359,36 @@ footer {
     display: block;
   }
 }
-  /* Hide images for screens smaller than 350px */
-  @media (max-width: 349px) {
-    header {
-      padding: 1rem; /* Adjust padding to fit smaller screens */
-    }
-
-    .nav_toggle_label {
-      top: 20px; /* Adjust the top position for smaller screens */
-      right: 10px; /* Ensure it doesn't go off the screen */
-    }
-
-    .recipe {
-      padding: 10px; /* Reduce padding for smaller screens */
-      margin: 10px;
-    }
-
-    .recipe img {
-      display: none;
-    }
-    #staples_image_right,
-    #staples_image_left {
-      display: none;
-    }
-
-    #hero_image,
-    #hero_image_sad {
-      display: none;
-    }
-
-    #happy_bot {
-      display: none;
-    }
+/* Hide images for screens smaller than 350px */
+@media (max-width: 349px) {
+  header {
+    padding: 1rem; /* Adjust padding to fit smaller screens */
   }
+
+  .nav_toggle_label {
+    top: 20px; /* Adjust the top position for smaller screens */
+    right: 10px; /* Ensure it doesn't go off the screen */
+  }
+
+  .recipe {
+    padding: 10px; /* Reduce padding for smaller screens */
+    margin: 10px;
+  }
+
+  .recipe img {
+    display: none;
+  }
+  #staples_image_right,
+  #staples_image_left {
+    display: none;
+  }
+
+  #hero_image,
+  #hero_image_sad {
+    display: none;
+  }
+
+  #happy_bot {
+    display: none;
+  }
+}
