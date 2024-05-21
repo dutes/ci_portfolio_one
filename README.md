@@ -46,7 +46,7 @@ Throughout the development process, I have maintained a rigorous design, build, 
 
 The Chef-O-Mat site has successfully been deployed to the web via GitHub Pages. The deployment not only assures the site is reachable on the general web, but it was also key to being able to test the design and eliminate bugs. The deployed site was continuously updated from the commits on the main project's GitHub repository.
 
-**LO04: Maximise future maintainability through documentation, code structure and organisation.**
+**LO4: Maximise future maintainability through documentation, code structure and organisation.**
 
 Maintainability was built in from the intial project stages with clear naming conventions, modularised CSS and code practices. The Readme document provides detail on the project from setup and installation to current status, testing performed and future development goals.
 
