@@ -8,18 +8,31 @@ Turn the last meal time before the week's grocery shop into a fun culinary playg
 
 ## Table of Contents
 - [Wire Frame](#wire-frame)
-- [Features](#features)
-  - [Delivered](#delivered-as-part-of-project-1)
-  - [Envisioned](#features-envisioned)
+- [Learning Outcomes](#learning-outcomes)
+  - [Delivered as part of Project 1](#delivered-as-part-of-project-1)
 - [Site Map](#site-map)
+- [Features](#features)
+  - [Favicon](#favicon)
+  - [Header](#header)
+  - [Footer](#footer)
+  - [Main Page Welcome](#main-page-welcome)
+  - [Main Page Staples](#main-page-staples)
+  - [Web App page](#web-app-page)
+  - [Not There](#not-there)
+  - [Thanks](#thanks)
+  - [Seasonal](#seasonal)
 - [Testing](#testing)
   - [General Testing](#general-testing)
   - [Accessibility Testing](#accessibility-testing)
   - [Validation Testing](#validation-testing)
   - [Unfixed Issues](#unfixed-issues)
 - [Deployment](#deployment)
+  - [Development and source control](#development-and-source-control)
+  - [Deployment Process](#deployment-process)
+  - [Cloning](#cloning)
 - [References](#references)
-- [Credits](#credits)
+- [Technologies Used](#technologies-used)
+- [Credits and Thanks](#credits-and-thanks)
 
 
 ## Wire Frame
@@ -64,14 +77,14 @@ Here is a visual site map of the Chef-O-Mat site:
 
 The envisioned features of this project aim to transform the basic, static site  into a dynamic and interactive web application. The primary functionality will be an ingredient input form where users can enter up to five ingredients and select a preferred cuisine style. These inputs will be sent via an API to Chat-GPT, which will generate five recipes based on the user's input. The generated recipes will be returned and displayed in a uniformly styled card format that includes the recipe name, an image, the ingredients list, and preparation instructions. Additional future functionality will enable users to create accounts, save their preferred recipes, and share them on social media. These enhancements will significantly improve user engagement and provide a richer, more immersive user experience.
 
-**Favicon**
+# Favicon 
 
 - Chef-O-Mat favicon has been implemented on all pages. 
 - This displays in the browser tab and will allow users to find our site easily when multi tab browsing. 
 
 ![favicon](assets/readme_images/chef0mat_favicon.png)
 
-**Header**
+# Header
 
 - Chef-O-Mat header consisits of the site brand amabasdor and the page links to the main page, the web app and the seasonal pages. 
 - The nav bar transforms into a burger menu when the site is viewed at mobile size.
@@ -79,21 +92,21 @@ The envisioned features of this project aim to transform the basic, static site 
 
 ![header](assets/readme_images/chef0mat_header.png)
 
-**Footer**
+# Footer
 
 - Footer is fixed at the bottom each page and is styled in the colour scheme of the site. 
 - the footer contains two social media icons which 'buldge' on hover on desktop and open the respective sites on click/tap.
 
 ![footer](assets/readme_images/chef0mat_footer.png)
 
-**Main Page Welcome**
+# Main Page Welcome
 
 - This is the initial landing page for users arriving at the site. 
 - The welcome text is short and punchy intorduction to what the site is for and the benefits of five ingredient cooking.
 
 ![Main_welcome](assets/readme_images/chef0mat_main_welcome.png)
 
-**Main Page Staples**
+# Main Page Staples
 
 - The staples section of the main page lists the staples a user should have on hand in order to be best prepared for 5 ingredient cooking
 - The text is broken up with cartoony images of the staples, the images are dynamic to fix a wide array of screen widths and are hidden when viewed on smaller screens.
@@ -101,7 +114,7 @@ The envisioned features of this project aim to transform the basic, static site 
 ![Main_staples](assets/readme_images/chef0mat_main_staples.png)
 
 
-**Web App page**
+# Web App page
 
 - This is the heart of the website that contains the actual functionality of the site.
 - The form is labeled for the expected input and the 5 ingredient fields are required. 
@@ -109,7 +122,7 @@ The envisioned features of this project aim to transform the basic, static site 
 
 ![Web_App](assets/readme_images/chef0mat_web_app.png)
 
-**Not There**
+# Not There
 
 - This page is displayed to the user in lieu of the Chat-GPT generated recipes. 
 - The Chef-O-Mat hero image is replaced with a sad version to indicate sadness at not being able to carry out its duties. 
@@ -120,7 +133,7 @@ The envisioned features of this project aim to transform the basic, static site 
 ![Not_There](assets/readme_images/chef0mat_not_there.png)
 
 
-**Thanks**
+# Thanks
 
 - Once the user has submitted an email address, they are brought to the 'thank_you' page. 
 - Chef-O-Mat greets the user with a happy face giving the user positive feedback for submitting an email.
@@ -129,7 +142,7 @@ The envisioned features of this project aim to transform the basic, static site 
 ![thank_you](assets/readme_images/chef0mat_thank_you.png)
 
 
-**Seasonal**
+# Seasonal
 
 - The Seasonal page contains some sample recipes showcasing the index card style the generated recipes will follow.
 - Each recipe is displayed in a card format with a title, image, ingredients and instructions.
@@ -203,41 +216,86 @@ Results available here:
 ### Unfixed Issues
 The Lighthouse test gave the site a 95% accessibility score. While this is a strong indication of the site's accessibility, Lighthouse alone is not considered a comprehensive measure. The WAVE test identified one contrast error on the active navigation page color. I attempted to address this issue, but due to the constraints of using only HTML and CSS, I was unable to implement a satisfactory solution. In a future project, I plan to enhance the navigation experience by adding an animated color-contrasting background for the active page. This will help provide better accessible contrast and improve the overall user experience.
 
-## Deployment
-The site is deployed on GitHub Pages.
-The process was as follows:
+### Deployment
+
+## Development and source control
+
+The site was created using Visual Studio and source code controlled in a GitHub repository.
+When I wanted to commit new code to the project I used the following commands:
+
+```git add <filename>``` 
+-this added the chosen file to the staging area.
+
+```git commit -m "commit message"``` -this command committed the files in staging to the local repository with a short piece on what changes I had made that I wanted to add to the project.
+
+```git push``` -this command pushed (or synced) the committed changes to the remote repository on my GitHub account.
+
+## Deployment Process
+
+The site is deployed to GitHub Pages.
+The process is as follows:
  - Open the github repository, navigate to settings tab.
- - Select Master from the source drop-down.
- - The deployment process will begin and progress can be observed with the ribbon display on the right hand side of the Github page.
+ - From the left hand side menu, open the 'Pages' link.
+ - Select Main from the source drop-down.
+ - The deployment process will begin and progress can be observed with the ribbon display on the right hand side of the Github page. Once the displays green the site should be deployed.
 
- The live link to the site is:
+ The live link to the site is: [Chef-O-Mat](https://dutes.github.io/ci_portfolio_one/index.html)
 
- [Chef-O-Mat](https://dutes.github.io/ci_portfolio_one/index.html)
+ ## Cloning
 
- ## References
+ To work on the project locally you follow these steps:
+ - Click on the code dropdown menu button
+ - Click on HTTPS
+ - Copy the link to the repository
+ - Ensure your local IDE has githum installed (for example as an extension in VStudio)
+ - Open the IDE's terminal and type:
+
+```git clone <paste link copied from repo>```
+
+ - hit enter and the project will be cloned locally for you to work on.
+
+
+
+ ### References
  
  ***W3C Schools***
 
- [W3C](https://www.w3schools.com/)
- Used extensively for HTML and CSS learnings.
+ [W3C](https://www.w3schools.com/) - Used extensively for HTML and CSS learnings.
 
 ***CSS-Tricks***
 
-[CSStricks](https://css-tricks.com/)
-Used for CSS.
+[CSStricks](https://css-tricks.com)- Used for CSS understanding. 
 
-***Excel to Markdown***
-[Excel to Markdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/)
-Used for tables in testing section
 
 ***CSS Flexbox Froggy***
-[CSS-Froggy](https://flexboxfroggy.com/)
+
+[CSS-Froggy](https://flexboxfroggy.com/)- for CSS display flex understanding
 
 ***Dall-E***
 
-[Dall-E](https://openai.com/index/dall-e-3/)
-Used for image generation of Chef-O-Mat and assoicated images.
+[Dall-E](https://openai.com/index/dall-e-3/)- Used for image generation of Chef-O-Mat and assoicated images.
 
+### Technologies Used
+- HTML
+  - Site developed in HTML.
+- CSS 
+  - Site stylised with linked CSS file.
+- GitHub 
+  - Source control and storage.
+- GitHub Pages
+  - Deployment of site.
+- Git 
+  - Used to commit code to source control.
+- Tinyjpg
+  - [Tinyjpg](https://tinyjpg.com/) used to compress image assets of the web site.
+- Font Awesome
+  - [FontAwesome](https://fontawesome.com/)used for the social media icons.
+- Favicon
+  - [Favicon](https://favicon.io/favicon-converter/) used to generate the favicons for the site.
+- Google Fonts
+  - [Google Fonts](https://fonts.google.com/) Used for the fonts on the site.
+- Excel to Markdown
+  - [Excel to Markdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/)- Used for tables in testing section
 ## Credits and Thanks
 
 Credit for the images on the seasonal recipes page:
