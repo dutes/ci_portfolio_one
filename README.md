@@ -143,7 +143,7 @@ Accessibility was considered from the very beginning of the project, and best pr
 
 
 ### Validation Testing
-I ran my site through the W3C HTML and CCSS validators and no errors were found. 
+I ran my site through the W3C HTML and CSS validators and no errors were found. 
 Results available here:
 
 [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdutes.github.io%2Fci_portfolio_one%2Findex.html)
