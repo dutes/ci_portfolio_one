@@ -4,40 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!--css link-->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>Seasonal Recipes</title>
+  <title>Chef-o-mat</title>
+  <!--favicon imports-->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-
-
 </head>
+
 
 <body>
   <header>
+    <!--nav bar toggle-->
     <input type="checkbox" id="nav_toggle" name="nav_toggle">
     <label for="nav_toggle" class="nav_toggle_label"><i class="fa-solid fa-bars" style="color: #ffd785"></i><span
-        class="sr-only">Toggle for navigation menu</span></label>
+            class="sr-only">Toggle for navigation menu</span></label>
     <nav>
-      <ul>
-        <li><a href="index.html">Main</a></li>
-        <li><a href="web_app.html">Web App</a></li>
-        <li><a href="seasonal.html" class="active">Seasonal</a></li>
-      </ul>
+        <!--Nav links-->
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="web_app.html">Web App</a></li>
+            <li><a href="seasonal.html" class="active">Seasonal</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
   <div id="hero_image"></div>
 
   <main>
     <div id="seasonal_main">
+      <!--recipes intro-->
       <h1>Seasonal recipes</h1>
       <p>Here's some ideas for using up seasonal ingredients</p>
     </div>
+    <!--first recipe card-->
     <div class="recipe">
       <h1 class="recipe_title">Garlic Butter Shrimp</h1>
       <div class="ingredients_container">
@@ -50,6 +54,7 @@
           <li>Parsely (optional garnish)</li>
         </ul>
       </div>
+      <!--container for instructions-->
       <div class="instructions_container">
         <h2>Instructions</h2>
         <ol class="instructions">
@@ -69,6 +74,7 @@
         </ol>
       </div>
     </div>
+      <!--second recipe card-->
     <div class="recipe">
       <h1 class="recipe_title">Balsamic Glazed Chicken</h1>
       <div class="ingredients_container">
@@ -81,6 +87,7 @@
           <li>Salt and pepper</li>
         </ul>
       </div>
+      <!--container for instructions-->
       <div class="instructions_container">
         <h2>Instructions</h2>
         <ol class="instructions">
@@ -100,6 +107,7 @@
         </ol>
       </div>
     </div>
+    <!--third recipe card-->
     <div class="recipe">
       <h1 class="recipetitle">Honey Baked Pears</h1>
       <div class="ingredients_container">
@@ -112,6 +120,7 @@
           <li>Vanilla ice cream (optional, for serving)</li>
         </ul>
       </div>
+      <!--container for instructions-->
       <div class="instructions_container">
         <h2>Instructions</h2>
         <ol class="instructions">
@@ -137,23 +146,25 @@
   </main>
 
   <footer>
+    <!--footer-->
     <ul id="footer">
-      <li>
-        <ul id="social_networks">
-          <li>
-            <a href="https://twitter.com" target="_blank" rel="noopener"
-              aria-label="Vist our twitter page - Opens in a new tab"><i class="fa-brands fa-square-twitter"
-                style="color: #ffd785"></i></a>
-          </li>
-          <li>
-            <a href="https://instagram.com" target="_blank" rel="noopener"
-              aria-label="Vist our instagram page - Opens in a new tab"><i class="fa-brands fa-square-instagram"
-                style="color: #ffd785"></i></a>
-          </li>
-        </ul>
-      </li>
+        <li>
+            <ul id="social_networks">
+                <!--social media links-->
+                <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Vist our twitter page - Opens in a new tab"><i
+                            class="fa-brands fa-square-twitter" style="color: #ffd785"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Vist our instagram page - Opens in a new tab"><i
+                            class="fa-brands fa-square-instagram" style="color: #ffd785"></i></a>
+                </li>
+            </ul>
+        </li>
     </ul>
-  </footer>
+</footer>
   <script src="https://kit.fontawesome.com/f55d50b855.js" crossorigin="anonymous"></script>
 </body>
 
