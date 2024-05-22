@@ -29,7 +29,7 @@ Here is the wirefame which formed the foundation of the website's design. It spe
 ![Wire Frame](assets/readme_images/wire_frame.png)
 
 
-## Features 
+## Learning outcomes 
 
 ### (Delivered as part of Project 1)
 **LO1: Design an interactive Front-End web application using HTML and CSS based on the principles of user experience design, accessibility and responsivity.**
@@ -55,37 +55,87 @@ Maintainability was built in from the intial project stages with clear naming co
 
 The entire development of the project has been managed using GitHub as its version control and development environment. Changes have been committed regularly with clear commit messaging allowing a full over view of the progress and milestones of the project's process from concept to submission. 
 
-
-### Features (envisioned)
-
-The envisioned features of this project aim to transform the basic, static site  into a dynamic and interactive web application. The primary functionality will be an ingredient input form where users can enter up to five ingredients and select a preferred cuisine style. These inputs will be sent via an API to Chat-GPT, which will generate five recipes based on the user's input. The generated recipes will be returned and displayed in a uniformly styled card format that includes the recipe name, an image, the ingredients list, and preparation instructions. Additional future functionality will enable users to create accounts, save their preferred recipes, and share them on social media. These enhancements will significantly improve user engagement and provide a richer, more immersive user experience.
-
 ## Site Map
 Here is a visual site map of the Chef-O-Mat site:
 
 ![Site Map](assets/readme_images/site_map.webp)
 
-**Main Page**
+## Features 
 
-This is the initial landing page for users arriving at the site. The page is designed to give the user a welcoming sensation with a prominent Chef-O-Mat hero image and a simple layout. The text is short and punchy, drawing the user's eyes to it. The navigation element in the header catches the eye and entices the user to click the text links.
+The envisioned features of this project aim to transform the basic, static site  into a dynamic and interactive web application. The primary functionality will be an ingredient input form where users can enter up to five ingredients and select a preferred cuisine style. These inputs will be sent via an API to Chat-GPT, which will generate five recipes based on the user's input. The generated recipes will be returned and displayed in a uniformly styled card format that includes the recipe name, an image, the ingredients list, and preparation instructions. Additional future functionality will enable users to create accounts, save their preferred recipes, and share them on social media. These enhancements will significantly improve user engagement and provide a richer, more immersive user experience.
+
+**Favicon**
+
+- Chef-O-Mat favicon has been implemented on all pages. 
+- This displays in the browser tab and will allow users to find our site easily when multi tab browsing. 
+
+![favicon](assets/readme_images/chef0mat_favicon.png)
+
+**Header**
+
+- Chef-O-Mat header consisits of the site brand amabasdor and the page links to the main page, the web app and the seasonal pages. 
+- The nav bar transforms into a burger menu when the site is viewed at mobile size.
+- This allows the user to navigate on a wide array of devices and screen sizes.
+
+![header](assets/readme_images/chef0mat_header.png)
+
+**Footer**
+
+- Footer is fixed at the bottom each page and is styled in the colour scheme of the site. 
+- the footer contains two social media icons which 'buldge' on hover on desktop and open the respective sites on click/tap.
+
+![footer](assets/readme_images/chef0mat_footer.png)
+
+**Main Page Welcome**
+
+- This is the initial landing page for users arriving at the site. 
+- The welcome text is short and punchy intorduction to what the site is for and the benefits of five ingredient cooking.
+
+![Main_welcome](assets/readme_images/chef0mat_main_welcome.png)
+
+**Main Page Staples**
+
+- The staples section of the main page lists the staples a user should have on hand in order to be best prepared for 5 ingredient cooking
+- The text is broken up with cartoony images of the staples, the images are dynamic to fix a wide array of screen widths and are hidden when viewed on smaller screens.
+
+![Main_staples](assets/readme_images/chef0mat_main_staples.png)
+
 
 **Web App page**
 
-This is the second page in the navigation element. It is the heart of the website as it will contain the key functionality for the site. The form is written in standard HTML and is currently not validating input since the underlying functionality is not yet present. Clicking submit on this form, even while empty, will bring the user to a non-navigation linked page called 'Not There'.
+- This is the heart of the website that contains the actual functionality of the site.
+- The form is labeled for the expected input and the 5 ingredient fields are required. 
+- When the user submits the form, no data is passed, instead they are brought to a page called 'Not there'.
 
-**Email**
+![Web_App](assets/readme_images/chef0mat_web_app.png)
 
-This page is displayed to the user in lieu of the Chat-GPT generated recipes. The Chef-O-Mat hero image is replaced with a sad version to indicate sadness at not being able to carry out its duties. The user is instead offered the chance to enter their email address to be notified when the Chef-O-Mat is ready to use. Email address entry is validated on this form. This page will be removed from the site once the web app is functional, as the user's email address will be captured at the account creation stage.
+**Not There**
+
+- This page is displayed to the user in lieu of the Chat-GPT generated recipes. 
+- The Chef-O-Mat hero image is replaced with a sad version to indicate sadness at not being able to carry out its duties. 
+- The user is instead offered the chance to enter their email address to be notified when the Chef-O-Mat is ready to use. 
+- Email address entry is validated on this form. 
+- This page will be removed from the site once the web app is functional, as the user's email address will be captured at the account creation stage.
+
+![Not_There](assets/readme_images/chef0mat_not_there.png)
 
 
 **Thanks**
 
-On the Thanks page, Chef-O-Mat indicates its pleasure that the user has entered an email address. This is a positive feedback instance for the user, as the cute robot shows genuine happiness at being entrusted with the user's address. This page will also be removed once the web app functionality is included, with the happy asset reused at the end of a successful account creation process.
+- Once the user has submitted an email address, they are brought to the 'thank_you' page. 
+- Chef-O-Mat greets the user with a happy face giving the user positive feedback for submitting an email.
+-  This page will be removed once the web app functionality is included; The happy asset reused at the end of the account creation process.
+
+![thank_you](assets/readme_images/chef0mat_thank_you.png)
+
 
 **Seasonal**
 
-The Seasonal page currently contains some sample recipes showcasing the index card style the generated recipes will follow. This page will evolve into a page displaying the most shared recipes generated in the past period of time. There is potential for sponsored content to be included in the sample recipes listed here in the future.
+- The Seasonal page contains some sample recipes showcasing the index card style the generated recipes will follow.
+- Each recipe is displayed in a card format with a title, image, ingredients and instructions.
+- The cards are responsive and the images dynamic allowing for maximum readability at all screen sizes.
 
+![Seasonal](assets/readme_images/chef0mat_seasonal.png)
 
 ## Testing
 
