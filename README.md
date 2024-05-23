@@ -4,7 +4,7 @@ Ever found yourself staring at a random assortment of ingredients and a few pant
 Whether you are a practiced home cook or someone who couldn't boil an egg - this site has your back. Simply input five of your ingredients and any particular cuisine style, and the Chef-O-Mat will give you some simple, delicious, and creative meal recipes.
 Turn the last meal time before the week's grocery shop into a fun culinary playground!
 
-![Chef-O-Mat](assets/readme_images/chef-o-mat-readme.png)
+![Chef-O-Mat](assets/readme_images/chef0mat_readme.png)
 
 ## Table of Contents
 - [Wire Frame](#wire-frame)
@@ -21,6 +21,7 @@ Turn the last meal time before the week's grocery shop into a fun culinary playg
   - [Not There](#not-there)
   - [Thanks](#thanks)
   - [Seasonal](#seasonal)
+  - [404](#404-page)
 - [Testing](#testing)
   - [General Testing](#general-testing)
   - [Accessibility Testing](#accessibility-testing)
@@ -149,6 +150,13 @@ The envisioned features of this project aim to transform the basic, static site 
 - The cards are responsive and the images dynamic allowing for maximum readability at all screen sizes.
 
 ![Seasonal](assets/readme_images/chef0mat_seasonal.png)
+
+# 404 page
+
+- I included a 404 page so that the user has a way to get back to the main content if they happen to get lost. 
+
+![404](assets/readme_images/chefOmat_dead.png)
+
 
 ## Testing
 
