@@ -63,7 +63,7 @@ The Chef-O-Mat site has successfully been deployed to the web via GitHub Pages. 
 **LO4: Maximise future maintainability through documentation, code structure and organisation.**
 **LO4: Maximise future maintainability through documentation, code structure and organisation.**
 
-Maintainability was built in from the intial project stages with clear naming conventions, modularised CSS and code practices. The Readme document provides detail on the project from setup and installation to current status, testing performed and future development goals.
+Maintainability was built in from the initiall project stages with clear naming conventions, modularised CSS and code practices. The Readme document provides detail on the project from setup and installation to current status, testing performed and future development goals.
 
 **LO5: Demonstrate and document the development process through a version control system such as GitHub.**
 
@@ -87,7 +87,7 @@ The envisioned features of this project aim to transform the basic, static site 
 
 # Header
 
-- Chef-O-Mat header consisits of the site brand amabasdor and the page links to the main page, the web app and the seasonal pages. 
+- Chef-O-Mat header consists of the site brand ambassador and the page links to the main page, the web app and the seasonal pages. 
 - The nav bar transforms into a burger menu when the site is viewed at mobile size.
 - This allows the user to navigate on a wide array of devices and screen sizes.
 
@@ -96,14 +96,14 @@ The envisioned features of this project aim to transform the basic, static site 
 # Footer
 
 - Footer is fixed at the bottom each page and is styled in the colour scheme of the site. 
-- the footer contains two social media icons which 'buldge' on hover on desktop and open the respective sites on click/tap.
+- the footer contains two social media icons which 'expand' on hover on desktop and open the respective sites on click/tap.
 
 ![footer](assets/readme_images/chef0mat_footer.png)
 
 # Main Page Welcome
 
 - This is the initial landing page for users arriving at the site. 
-- The welcome text is short and punchy intorduction to what the site is for and the benefits of five ingredient cooking.
+- The welcome text is short and punchy introduction to what the site is for and the benefits of five ingredient cooking.
 
 ![Main_welcome](assets/readme_images/chef0mat_main_welcome.png)
 
@@ -257,7 +257,7 @@ The process is as follows:
  - Click on the code dropdown menu button
  - Click on HTTPS
  - Copy the link to the repository
- - Ensure your local IDE has githum installed (for example as an extension in VStudio)
+ - Ensure your local IDE has github installed (for example as an extension in VStudio)
  - Open the IDE's terminal and type:
 
 ```git clone <paste link copied from repo>```
@@ -283,7 +283,7 @@ The process is as follows:
 
 ***Dall-E***
 
-[Dall-E](https://openai.com/index/dall-e-3/)- Used for image generation of Chef-O-Mat and assoicated images.
+[Dall-E](https://openai.com/index/dall-e-3/)- Used for image generation of Chef-O-Mat and associated images.
 
 ### Technologies Used
 - HTML
@@ -299,13 +299,14 @@ The process is as follows:
 - Tinyjpg
   - [Tinyjpg](https://tinyjpg.com/) used to compress image assets of the web site.
 - Font Awesome
-  - [FontAwesome](https://fontawesome.com/)used for the social media icons.
+  - [FontAwesome](https://fontawesome.com/) used for the social media icons.
 - Favicon
   - [Favicon](https://favicon.io/favicon-converter/) used to generate the favicons for the site.
 - Google Fonts
   - [Google Fonts](https://fonts.google.com/) Used for the fonts on the site.
 - Excel to Markdown
   - [Excel to Markdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/)- Used for tables in testing section
+  
 ## Credits and Thanks
 
 Credit for the images on the seasonal recipes page:
