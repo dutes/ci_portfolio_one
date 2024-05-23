@@ -357,6 +357,28 @@ footer {
   #hero_image_sad {
     display: block;
   }
+
+/* 404 page */
+#you_lost {
+  padding-top: 100px;
+  padding-bottom: 25px;
+  margin: auto;
+  text-align: center;
+}
+
+#dead_bot {
+  background-image: url("../images/chef0mat_dead.webp");
+  width: 50%;
+  padding-top: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
 }
 /* Hide images for screens smaller than 350px */
 @media (max-width: 349px) {
@@ -388,6 +410,10 @@ footer {
   }
 
   #happy_bot {
+    display: none;
+  }
+
+  #dead_bot {
     display: none;
   }
 }
