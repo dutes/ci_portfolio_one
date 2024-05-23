@@ -195,7 +195,9 @@ Desktop browser coverage was also completed as follows:
 Accessibility was considered from the very beginning of the project, and best practices for accessibility were followed. To validate the accessibility of the site, I ran the webpages through the Lighthouse and WAVE testing tools.
 
 
-![Lighthouse results](assets/readme_images/lighthouse_result.png)
+![Lighthouse Desk top result](assets/readme_images/light_house_desk.png)
+
+![Lighthouse Mobile result](assets/readme_images/light_house_mobile.png)
 
 [Link to Full report](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fdutes.github.io%2Fci_portfolio_one%2Findex.html&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&locale=en-US&utm_source=lh-chrome-ext)
 
