@@ -284,6 +284,14 @@ footer {
   display: block;
 }
 
+/* 404 page */
+#you_lost {
+  padding-top: 100px;
+  padding-bottom: 25px;
+  margin: auto;
+  text-align: center;
+}
+
 /* styles for larger screens */
 @media (min-width: 600px) {
   .nav_toggle_label,
@@ -413,7 +421,7 @@ footer {
     display: none;
   }
 
-  #you_lost.h2{
+  #you_lost {
     padding-top: 200px;
     padding-bottom: 25px;
     margin: auto;
